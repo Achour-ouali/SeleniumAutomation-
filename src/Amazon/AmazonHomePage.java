@@ -127,6 +127,34 @@ public class AmazonHomePage {
         String title12 =driver.getTitle();
         System.out.println(title12);
 
+//test case12:use should have to select his/her option on amazon basics
+        driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("amazon basics");
+        driver.findElement(By.cssSelector("#nav-xshop > a:nth-child(10)")).click();
+        driver.findElement(By.cssSelector("#Header-SZQNaPS > div > div.style__navArea__jlY6Q > div.style__rightColumn__32Y8Y > div.style__navigation__FMWJE.style__navigation__fzWOQ.style__hasLogo__3Lfx0 > nav.style__navBar__2NVns > ul > li:nth-child(9) > a > span")).click();
+        String title13 =driver.getTitle();
+        System.out.println(title13);
+
+//test case13:use should have to have option if he/she wants to sell something
+        driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("sell");
+        driver.findElement(By.cssSelector("#nav-xshop > a:nth-child(11)")).click();
+        driver.findElement(By.cssSelector("#rp_cta_h_c > div > div > a")).click();
+        String title14 =driver.getTitle();
+        System.out.println(title14);
+
+ //test case14:use should have option to look for a coupons section
+        driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("coupons");
+        driver.findElement(By.cssSelector("#nav-xshop > a:nth-child(12)")).click();
+        driver.findElement(By.cssSelector("#coupon_box_A1AI4KTEPHI77K > div > div > div.a-section.coupon-image")).click();
+        String title15 =driver.getTitle();
+        System.out.println(title15);
+
+//test case15:use should have option to checkout what in his card shop
+        driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("cart");
+        driver.findElement(By.cssSelector("#nav-cart")).click();
+        driver.findElement(By.cssSelector("#a-autoid-0-announce > span")).click();
+        String title16 =driver.getTitle();
+        System.out.println(title16);
+
 
     }
 
